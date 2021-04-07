@@ -12,42 +12,71 @@
   </head>
   <body>
 
-    <div class="container">
-      <h1 class="page-header">Bootstrap Cheat Sheet</h1>
-      <p class="lead"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus velit quia esse similique 
-        facilis illo ex quam repudiandae sapiente ipsam incidunt temporibus molestiae alias qui, commodi vitae. 
-        Voluptatum, obcaecati maiores.
-      </p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+   
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
 
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni molestias soluta voluptates corrupti dicta 
-        libero necessitatibus nostrum saepe ab repellat accusamus rerum quo delectus sed itaque,
-        sapiente fugit recusandae. Quibusdam!
-
-      </p>
-
-    <p class="text-left">Left aligned text on all viewport sizes.</p>
-    <p class="text-center">Center aligned text on all viewport sizes.</p>
-    <p class="text-right">Right aligned text on all viewport sizes.</p>
-    <p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
-    <p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
-    <p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
-    <p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
-
-
-    <p class="font-weight-bold">Bold text.</p>
-    <p class="font-weight-normal">Normal weight text.</p>
-    <p class="font-weight-light">Light weight text.</p>
-    <p class="font-italic">Italic text.</p>
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        HELLO THERE!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger">Save changes</button>
+      </div>
     </div>
-  
-    
-    
+  </div>
+</div>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
    
   </body>
 </html>
